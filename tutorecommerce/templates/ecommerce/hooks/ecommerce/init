@@ -32,4 +32,4 @@ export DJANGO_SETTINGS_MODULE=ecommerce.settings.tutor
   --discovery_api_url={% if ACTIVATE_HTTPS %}https{% else %}http{% endif %}://{{ DISCOVERY_HOST }}/api/v1/
 {% endif %}
 
- ./manage.py waffle_switch     payment_processor_active_alipay on
+ ./manage.py waffle_switch  --create   payment_processor_active_alipay on
